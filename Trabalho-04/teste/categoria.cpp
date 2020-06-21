@@ -52,3 +52,7 @@ void Categoria::acrescentaValor(float custo) {
 float Categoria::consultaEstouro() {
     return _gastoAtual - _orcamentoTotal;
 }
+
+float Categoria::consultaRestante(){
+	return _orcamentoTotal - _gastoAtual;
+}

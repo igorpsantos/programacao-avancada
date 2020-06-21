@@ -26,6 +26,7 @@ public:
 	bool verificarOrcamento();
 	void acrescentaValor(float);
 	float consultaEstouro();
+	float consultaRestante();
 	static vector<Categoria> listaCategorias;
 };
 #endif // CATEGORIA_H
