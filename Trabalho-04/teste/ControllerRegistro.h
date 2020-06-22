@@ -2,15 +2,23 @@
 #define CONTROLLERREGISTRO_H
 
 #include "registro.h";
+#include "RegistroDAO.h"
 #include "periodo.h";
+#include "InterfaceUsuario.h"
 
 class ControllerRegistro {
 private:
+	RegistroDAO registroDAO;
+	InterfaceUsuario interfaceUsuario;
 public:
 	ControllerRegistro();
 
-	void adicionarGastos(Registro registro);
-	void consultarGastos(Periodo periodo);
+	void executar();
+
+	void adicionarGastos(string arquivo);
+	void consultarGastos();
+	void importarGastos(int mes);
+	void exportarGastos(int mes);
 
 };
 

@@ -13,7 +13,7 @@ class Registro {
 private:
 	int _cod;
 	Data _data;
-	int _hora;
+	string _hora;
 	string _descricao;
 	Categoria* _categoria;
 	float _valor;
@@ -25,12 +25,13 @@ public:
 	friend istream& operator>>(istream& is, Registro& registro);
 	friend ostream& operator<<(ostream& os, Registro& registro);
 
-	Registro(Data data, int hora, string descricao, Categoria* categoria, float preco);
+	Registro(Data data, string hora, string descricao, Categoria* categoria, float preco);
 
 	int getMes() {
 		return _data.getMes();
 	}
-
+	Categoria* getCategoria(){return _categoria;}
+	float getCusto(){return _valor;}
 	Data getData() {
 		return _data;
 	}

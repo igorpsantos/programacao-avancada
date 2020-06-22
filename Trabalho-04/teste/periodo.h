@@ -11,5 +11,6 @@ private:
 	float _total;
 public:
 	Periodo(Data inicial, Data final, float total);
+	float getTotal(){return _total;};
 	vector<Registro> _registros;
 };

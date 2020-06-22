@@ -11,7 +11,7 @@ using namespace std;
 class CategoriaDAO{
 public:
 	void carregarCategorias();
-	void adicionarCategoria(string categoria);
+	/* void adicionarCategoria(string categoria); */
 	void salvaLista();
 };
 

@@ -5,7 +5,6 @@
 
 class PeriodoDAO {
 public:
-	//Periodo importar();
 	void exportar(Periodo);
 };
 
