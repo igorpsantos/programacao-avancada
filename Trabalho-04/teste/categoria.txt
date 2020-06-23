@@ -1,0 +1,2 @@
+categoria3,4000
+categoria4,5000

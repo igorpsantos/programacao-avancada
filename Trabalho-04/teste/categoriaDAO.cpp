@@ -1,20 +1,32 @@
 #include "categoriaDAO.h"
-#define ARQUIVO "Categoria.txt"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <iostream> 
+#include <sstream> 
+#include <vector>
+#define ARQUIVO "categoria.txt"
+using namespace std;
 
 void CategoriaDAO::carregarCategorias() {
-	ifstream fin(ARQUIVO);
-	string nome;
+	ifstream myfile(ARQUIVO);
+	string nomet,orcamentot;
+	vector<string> nomes, orcamentos;
 
-	while (!fin.eof()) {
-
-		fin >> nome;
-		if (fin.eof()) {
-			break;
+	if (myfile.is_open())
+	{
+		while (!myfile.eof())
+		{
+			getline(myfile, nomet, ',');
+			nomes.push_back(nomet);
+			getline(myfile, orcamentot);
+			orcamentos.push_back(orcamentot);
 		}
-		Categoria::listaCategorias.push_back(Categoria(nome));
-
+		for (int i = 0; i < nomes.size(); i++) {
+			Categoria::listaCategorias.push_back(Categoria(nomes[i],stof(orcamentos[i])));
+		}
 	}
-	fin.close();
+	myfile.close();
 }
 
 /* void CategoriaDAO::adicionarCategoria(string categoria) {
@@ -33,10 +45,10 @@ void CategoriaDAO::carregarCategorias() {
 
 void CategoriaDAO::salvaLista() {
 	//abre o arquivo e sobreescreve com alista atual
-	ofstream fout(ARQUIVO);
+	ofstream fout("TESTECAT.txt");
 
 	for (auto& e : Categoria::listaCategorias) {
-		fout << e.getNome() << "\n";
+		fout << e.getNome() << ", " << e.getOrcamentoTotal() << endl;
 	}
 	fout.close();
 }

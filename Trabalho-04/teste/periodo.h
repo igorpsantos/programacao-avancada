@@ -1,7 +1,7 @@
 #pragma once
-#include "data.h";
+#include "data.h"
 #include "registro.h"
-#include <vector>;
+#include <vector>
 using namespace std;
 
 class Periodo{
@@ -10,7 +10,7 @@ private:
 	Data _data_final;
 	float _total;
 public:
-	Periodo(Data inicial, Data final, float total);
+	Periodo(Data inicial, Data final);
 	float getTotal(){return _total;};
 	vector<Registro> _registros;
 };
