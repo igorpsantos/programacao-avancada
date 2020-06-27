@@ -1,0 +1,22 @@
+﻿  categoria.cpp
+  categoriaDAO.cpp
+  ControllerRegistro.cpp
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\categoriaDAO.cpp(25,21): warning C4018:  '<': incompatibilidade de signed/unsigned
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\ControllerRegistro.cpp(73,22): warning C4018:  '<': incompatibilidade de signed/unsigned
+  InterfaceUsuario.cpp
+  main.cpp
+  periodo.cpp
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\ControllerRegistro.cpp(108,21): warning C4018:  '<': incompatibilidade de signed/unsigned
+  periodoDAO.cpp
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\periodo.cpp(7,22): warning C4018:  '<': incompatibilidade de signed/unsigned
+  registro.cpp
+  RegistroDAO.cpp
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\periodoDAO.cpp(16,31): warning C4018:  '<': incompatibilidade de signed/unsigned
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\RegistroDAO.cpp(28,21): warning C4018:  '<': incompatibilidade de signed/unsigned
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\RegistroDAO.cpp(34,133): warning C4244:  'argumento': conversão de 'int' para 'float', possível perda de dados
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\RegistroDAO.cpp(50,21): warning C4018:  '<': incompatibilidade de signed/unsigned
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\RegistroDAO.cpp(85,20): warning C4018:  '<': incompatibilidade de signed/unsigned
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\RegistroDAO.cpp(92,123): warning C4244:  'argumento': conversão de 'int' para 'float', possível perda de dados
+  Gerando Código...
+C:\Users\igor\source\repos\ED2BIMPROG\ED2BIMPROG\RegistroDAO.cpp(101,18): warning C4018:  '<': incompatibilidade de signed/unsigned
+  ED2BIMPROG.vcxproj -> C:\Users\igor\source\repos\ED2BIMPROG\Debug\ED2BIMPROG.exe
